@@ -25,7 +25,26 @@ public class ConditionalCheckTest {
     }
 
     @Test
+    public void checkFalseEven()
+    {
+        assertEquals(true,obj.checkEven(7));
+    }
+
+    @Test
     public void liesInRange()
+
+    {
+        assertEquals(false,obj.liesInRange(22));
+    }
+    @Test
+    public void doesnotLieInRange()
+
+    {
+        assertEquals("Out of Range",false,obj.liesInRange(56));
+    }
+
+    @Test
+    public void liesinRange()
     {
         assertEquals(false,obj.liesInRange(32));
     }

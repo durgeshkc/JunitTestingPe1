@@ -43,6 +43,10 @@ public class LetterCategorizationTest {
     //testing for Digits..............................
     @Test
     public void isADigit() {
-
+        assertEquals(true,obj.isADigit('a'));
+    }
+    @Test
+    public void isaDigit() {
+        assertEquals(true,obj.isADigit('5'));
     }
 }
